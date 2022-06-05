@@ -2,6 +2,7 @@
 1) 시스템의 상태를 전반적으로 가장 빠르게 파악 가능하다.(CPU, Memory, Process)
 2) 옵션 없이 입력하면 interval 간격(기본 3초)으로 화면을 갱신하며 정보를 보여준다.
 3) **top -b -n 1**
+![image](https://t1.daumcdn.net/cfile/tistory/993AF2335985C5DE2C)
 
 # top 실행 전 옵션
 1) 순간의 정보를 확인하려면 '-b' 옵션 추가 한다.(batch 모드)
@@ -27,6 +28,7 @@
 2) 전통적인 유닉스인 System V, BSD, GNU에 따라 결과가 다르게 나타나고 표기법에도 차이를 보인다.(옵션 사용 시 System V 계열은 대시를 사용하고 BSD계열은 대시를 사용하지 않는다.)
 3) 원하는 프로세스의 상태를 출력하려면 **정확한 옵션 사용**이 중요하다.
 4) ps의 사용법은 "$ ps [option]"이다.
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=http%3A%2F%2Fcfile5.uf.tistory.com%2Fimage%2F996A90395BC6ECFD11AC3A)
 
 # ps 항목
 |항목|의미|
@@ -58,6 +60,7 @@
 1) 작업의 상태를 표시하는 명령어이다.
 2) 현재 쉘 세션에서 실행시킨 백그라운드 작업의 목록이 출력된다
 3) 각 작업에 번호가 붙어 있어 kill 명령어 뒤에 '%번호'등으로 사용할 수 있다.
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbtYqnv%2FbtqTIpUtoEN%2FkStUPnVZdWqdeKYmBF52w1%2Fimg.png)
 
 # jobs로 출력되는 백그라운드 작업의 상태값
 |상태|설명|
@@ -87,6 +90,7 @@
 4) 프로세스를 안전하게 종료하기 위해서는 "kill -9 pid", "kill -SIGKILL pid" 형태로 프로세스 강제 종료를 권장하지 않는다. (데이터 유실 위험)
 5) 일반적으로 해당 Process에 문제가 있어서 다시 시작하고자 할 때에는 SIGHUP, SIGTERM, SIGKILL의 순서로 시도해본다.
 6) kill 명령어는 내부적으로 kill()이란 시스템 콜을 사용하여 구현하고, 프로세스 식별자(PID)로 지시한 프로세스와 프로세스 그룹 식별자(PGID)로 지시한 프로세스 그룹에 시그널을 보낸다.
+![image](https://t1.daumcdn.net/cfile/tistory/99E84B455C6378A109)
 
 # 시그널
 1) 특정 이벤트가 발생했을 때 프로세스에게 전달하는 신호이다.
